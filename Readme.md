@@ -1,7 +1,7 @@
 # Branch naming rules
-<img alt="GitHub Actions status" src="https://github.com/deepakputhraya/action-branch-name/workflows/main/badge.svg">
+<img alt="GitHub Actions status" src="https://github.com/GO7-devops/action-branch-name/workflows/main/badge.svg">
 
-Github action to enforce naming convention on branch names
+GitHub action to enforce naming convention on branch names
 
 ## Usage
 
@@ -15,7 +15,7 @@ jobs:
   branch-naming-rules:
     runs-on: ubuntu-latest
     steps:
-      - uses: deepakputhraya/action-branch-name@master
+      - uses: GO7-devops/action-branch-name@main
         with:
           regex: '([a-z])+\/([a-z])+' # Regex the branch should match. This example enforces grouping
           allowed_prefixes: 'feature,stable,fix' # All branches should start with the given prefix
